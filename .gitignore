@@ -89,3 +89,4 @@ dmypy.json
 .ipynb_checkpoints
 data/
 scr/Data Preprocessing.ipynb
+scr/archived

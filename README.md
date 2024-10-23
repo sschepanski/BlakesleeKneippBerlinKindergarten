@@ -14,26 +14,11 @@ The primary objective of this project is to assess whether implementing a child-
 - **`scr/`**: R scripts for data exploration, preprocessing, modeling, and assumption testing.
 - **`graphs/`**: Contains the plots and visual outputs generated during the analysis.
 
-## Analysis Workflow
+## Scripts
 
-1. **In-Depth Exploratory Data Analysis (EDA):** Thoroughly examine the dataset, including an exploration of variable distributions and key patterns.
-2. **Attrition Analysis:** Assess the dropout rates during the study period to determine any potential biases from participant attrition.
-3. **Compliance Analysis:** Evaluate the adherence to the Kneipp intervention across kindergartens to assess the overall compliance and its impact on the results.
-4. **Data Imputation:** Address missing data through multiple imputation techniques to ensure robustness in the final analysis.
-5. **Modeling:** Utilize a negative binomial regression model to predict infection-related absenteeism, accounting for overdispersion in the count data.
-6. **Assumptions Testing:** Conduct thorough diagnostics of the negative binomial regression model, including checking for overdispersion, zero inflation, and the appropriateness of residual patterns.
-
-## Data Dictionary
-
-| Feature            | Description                                                    |
-|--------------------|----------------------------------------------------------------|
-| `Child_ID`         | Unique identifier for each child                               |
-| `Assessment`       | Assessment time point (baseline, follow-up)                    |
-| `kindergarten_ID`  | Identifier for the kindergarten                                |
-| `sickday_count_1`  | Baseline number of infection-related sick days                 |
-| `sickday_count_2`  | Number of infection-related sick days during the intervention  |
-| `Group`            | Group assignment (Intervention or Control)                     |
-| `Cluster_1`        | Cluster identifier for random effects                          |
+1. **KITA_children.ipynb:** This script focuses on analyzing the kindergarten-reported sick days of children. The main objective is to predict the number of sick days based on the groups (e.g., Kneipp intervention group vs. control group). Various models are applied to examine the impact of the intervention on children's health, specifically looking at infection-related absenteeism.
+2. **INT.ipynb:** This script provides a descriptive analysis of the Kneipp interventions conducted across four kindergartens over the course of one year. The analysis explores the frequency and types of interventions applied in each kindergarten, examining temporal trends and variations in program implementation. Visualizations such as heatmaps help illustrate these patterns.
+3. **SOSCI.ipynb:** This script analyzes parent-reported data, including information about socioeconomic background, family life, and the basic characteristics of the family and child(ren). Additionally, it covers the Common Cold Questionnaire (CCQ) responses to assess the children's health outcomes. The goal is to explore the relationship between family background and children's health, and to provide insights into factors that may influence their well-being.
 
 ## Acknowledgements
 
