@@ -11,7 +11,7 @@ The primary objective of this project is to assess whether implementing a child-
 ## Project Structure
 
 - **`data/`**: Contains the dataset used in the analysis.
-- **`scripts/`**: R scripts for data exploration, preprocessing, modeling, and assumption testing.
+- **`scr/`**: R scripts for data exploration, preprocessing, modeling, and assumption testing.
 - **`graphs/`**: Contains the plots and visual outputs generated during the analysis.
 
 ## Analysis Workflow
